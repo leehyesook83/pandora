@@ -14,7 +14,7 @@ function Detail(props){
         <Row>
             <Col>
               <div className="detail_img">
-                  <img src={HData.imgUrl}/>
+                  <img src={`${process.env.PUBLIC_URL}${HData.imgUrl}`}/>
               </div>
             </Col>
             <Col>
@@ -86,8 +86,8 @@ function Detail(props){
           fill
         >
           <Tab eventKey="detail" title="상세정보" enabled>
-            <img src={BData.imgUrl1}/>
-            <img src={BData.imgUrl2}/>
+            <img src={`${process.env.PUBLIC_URL}${BData.imgUrl1}`}/>
+            <img src={`${process.env.PUBLIC_URL}${BData.imgUrl2}`}/>
           </Tab>
           <Tab eventKey="review" title="리뷰">
           <div id="review">

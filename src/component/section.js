@@ -18,7 +18,7 @@ function Main(props){
             {
                 [1,2,3].map((a)=>{
                 return(
-                    <SwiperSlide><img src={`img/slide-${a}.jpg`}/></SwiperSlide>
+                    <SwiperSlide><img src={`${process.env.PUBLIC_URL}/img/slide-${a}.jpg`}/></SwiperSlide>
                 )
                 })
             }
@@ -41,7 +41,7 @@ function Section1(props){
                 {
                 [1,2].map((a)=>{
                     return(
-                    <img src={`./img/gallery-${a}.jpg`}/>
+                    <img src={`${process.env.PUBLIC_URL}/img/gallery-${a}.jpg`}/>
                     )
                 })
                 }
@@ -50,7 +50,7 @@ function Section1(props){
                 {
                 [3,4].map((a)=>{
                     return(
-                    <img src={`./img/gallery-${a}.jpg`}/>
+                    <img src={`${process.env.PUBLIC_URL}/img/gallery-${a}.jpg`}/>
                     )
                 })
                 }
@@ -78,7 +78,7 @@ function Section2(props){
                         props.setData(props.newdata[i]);
                         props.setDatas(props.newdataDetail[i]);
                     }}>
-                    <img className="bg" src={`${props.newdata[i].imgUrl}`}/>
+                    <img className="bg" src={`${process.env.PUBLIC_URL}${props.newdata[i].imgUrl}`}/>
                     <h1>{props.newdata[i].title}</h1>
                     <p>{props.newdata[i].content}</p>
                     <p className='line'>{props.Comma(props.newdata[i].Aprice)}원</p>
@@ -105,7 +105,7 @@ function Section3(props){
             {
                 [1,2,3].map((a)=>{
                 return(
-                    <img src={`./img/banner-${a}.jpg`}/>
+                    <img src={`${process.env.PUBLIC_URL}/img/banner-${a}.jpg`}/>
                 )
                 })
             }
@@ -119,7 +119,7 @@ function Section4(props){
     return(
         <section id='section4'>
             <div className='box'>
-            <img src="./img/left_gallery.jpg"/>
+            <img src={`${process.env.PUBLIC_URL}/img/left_gallery.jpg`}/>
             <div className='sBox'>
                 <h1 className='title'>MD item</h1>
                 <p>다양한 금속과 보석을 사용하여 모든 라인이 서로 어울리게 디자인 되어 있습니다.</p>
@@ -143,7 +143,7 @@ function Section4(props){
                             props.setData(props.mddata[i]);
                             props.setDatas(props.mddataDetail[i]);
                         }}>
-                        <img className='bg' src={props.mddata[i].imgUrl}/>
+                        <img className='bg' src={`${process.env.PUBLIC_URL}${props.mddata[i].imgUrl}`}/>
                         <h1>{props.mddata[i].title}</h1>
                         <p>{props.mddata[i].content}</p>
                         <p className='line'>{props.Comma(props.mddata[i].Aprice)}원</p>
@@ -180,7 +180,7 @@ function Section5(props){
                         props.setData(props.bestdata[i]);
                         props.setDatas(props.bestdataDetail[i]);
                     }}>
-                    <img className='bg' src={props.bestdata[i].imgUrl}/>
+                    <img className='bg' src={`${process.env.PUBLIC_URL}${props.bestdata[i].imgUrl}`}/>
                     <h1>{props.bestdata[i].title}</h1>
                     <p>{props.bestdata[i].content}</p>
                     <p className='line'>{props.Comma(props.bestdata[i].Aprice)}원</p>
@@ -208,19 +208,19 @@ function Section6(props){
                 <div className='w1'>
                     <div>
                     <div className='embo'></div>
-                    <img src="./img/instagram-1.jpg"/>
+                    <img src={`${process.env.PUBLIC_URL}/img/instagram-1.jpg`}/>
                     </div>
                 </div>
                 <div className='w1'>
                     <div>
                     <div className='embo'></div>
-                    <img src="./img/instagram-2.jpg"/>
+                    <img src={`${process.env.PUBLIC_URL}/img/instagram-2.jpg`}/>
                     </div>
                 </div>
                 <div className='w1'>
                     <div>
                     <div className='embo'></div>
-                    <img src="./img/instagram-3.jpg"/>
+                    <img src={`${process.env.PUBLIC_URL}/img/instagram-3.jpg`}/>
                     </div>
                 </div>
                 <div className='w1'></div>
@@ -230,20 +230,20 @@ function Section6(props){
                 <div className='w1'>
                     <div>
                     <div className='embo'></div>
-                    <img src="./img/instagram-4.jpg"/>
+                    <img src={`${process.env.PUBLIC_URL}/img/instagram-4.jpg`}/>
                     </div>
                 </div>
                 <div className='w1'>
                     <div>
                     <div className='embo'></div>
-                    <img src="./img/instagram-5.jpg"/>
+                    <img src={`${process.env.PUBLIC_URL}/img/instagram-5.jpg`}/>
                     </div>
                 </div>
                 </div>
                 <div className='btm'>
-                <img src="./img/slogan-img-1.jpg"/>
-                <img src="./img/slogan-img-2.jpg"/>
-                <img src="./img/slogan-img-3.jpg"/>
+                <img src={`${process.env.PUBLIC_URL}/img/slogan-img-1.jpg`}/>
+                <img src={`${process.env.PUBLIC_URL}/img/slogan-img-2.jpg`}/>
+                <img src={`${process.env.PUBLIC_URL}/img/slogan-img-3.jpg`}/>
                 <span className='title st1'>You embody love, you live it. Radiate it. Initiate it.</span>
                 <span className='title st2'>You embody love, you live it. Radiate it. Initiate it.</span>
                 </div>
