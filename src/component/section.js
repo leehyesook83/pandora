@@ -18,7 +18,7 @@ function Main(props){
             {
                 [1,2,3].map((a)=>{
                 return(
-                    <SwiperSlide><img src={`./img/slide-${a}.jpg`}/></SwiperSlide>
+                    <SwiperSlide><img src={`img/slide-${a}.jpg`}/></SwiperSlide>
                 )
                 })
             }
