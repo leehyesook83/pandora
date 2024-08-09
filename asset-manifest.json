@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/pandora/static/css/main.6dffedc5.css",
-    "main.js": "/pandora/static/js/main.097f0301.js",
+    "main.js": "/pandora/static/js/main.782fd40f.js",
     "static/js/453.2c56b7a3.chunk.js": "/pandora/static/js/453.2c56b7a3.chunk.js",
     "static/media/banner-bg.jpg": "/pandora/static/media/banner-bg.c0dde57635548d5e1003.jpg",
     "index.html": "/pandora/index.html",
     "main.6dffedc5.css.map": "/pandora/static/css/main.6dffedc5.css.map",
-    "main.097f0301.js.map": "/pandora/static/js/main.097f0301.js.map",
+    "main.782fd40f.js.map": "/pandora/static/js/main.782fd40f.js.map",
     "453.2c56b7a3.chunk.js.map": "/pandora/static/js/453.2c56b7a3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6dffedc5.css",
-    "static/js/main.097f0301.js"
+    "static/js/main.782fd40f.js"
   ]
 }
